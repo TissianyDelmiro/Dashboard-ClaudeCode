@@ -12,6 +12,8 @@
 
 Dashboard Streamlit de self-service para 3 diretores de um e-commerce, consumindo os Data Marts gold construídos nos dias anteriores da imersão. Gerado com **Claude Code** a partir de um PRD e do catálogo de dados.
 
+Streamlit: https://dashboard-claudecode-cxkbltzemuudnekg3qjswz.streamlit.app/
+
 <img width="1920" height="1894" alt="jornadadados" src="https://github.com/user-attachments/assets/cae7a08c-8cad-4175-83e3-b2f031bae008" />
 
 
