@@ -26,6 +26,13 @@ st.set_page_config(
 )
 load_dotenv(Path(__file__).parent / ".env")
 
+# Streamlit Cloud: copia secrets pro os.environ (no-op local sem secrets.toml).
+try:
+    for _k, _v in st.secrets.items():
+        os.environ.setdefault(_k, str(_v))
+except Exception:
+    pass
+
 # Converte NUMERIC do Postgres para float (evita Decimal em pandas/plotly).
 psycopg2.extensions.register_type(
     psycopg2.extensions.new_type(
